@@ -1,18 +1,18 @@
-*{
+* {
     background-color: #ffffff;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-h1{
+h1 {
     color: #fb6f92;
     text-align: center;
     margin-bottom: 20px;
     font-weight: 600;
 }
 
-.container{
+.container {
     max-width: 600px;
     margin: 50px auto;
     padding: 20px;
@@ -26,7 +26,7 @@ h1{
     align-items: center;
 }
 
-.input-box{
+.input-box {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -37,17 +37,57 @@ h1{
     padding: 10px;
 }
 
-.input-box-btn{
+.input-box-btn {
     display: flex;
     justify-content: center;
     gap: 20px;
 }
 
-.addbtn{
+.addbtn {
     background-color: #fb6f92;
     color: white;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
+}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    width: 490px;
+    margin-top: 1rem;
+    border-bottom: 1px solid #e1e1e1;
+    padding: 10px;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.deleteBtn {
+    border: none;
+    cursor: pointer;
+}
+
+#toast {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #fb6f92;
+    color: white;
+    padding: 14px 22px;
+    border-radius: 8px;
+    font-size: 14px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    transform: translateY(20px);
+    z-index: 1000;
+}
+
+#toast.show {
+    opacity: 1;
+    transform: translateY(0);
 }

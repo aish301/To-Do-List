@@ -11,15 +11,26 @@
 <body>
     <div class="container">
         <h1>To Do List</h1>
+
         <div class="input-box-btn">
             <input type="text" placeholder="Enter the Task below..." id="taskId" class="input-box" />
-            <button type="submit" id="addButton" class="addbtn">Add Task</button>
+            <button type="submit" id="addButton" class="addbtn">
+                Add Task
+            </button>
         </div>
+
+        <p id="error"></p>
+
+        <div class="lists" id="listContainer"></div>
     </div>
+
 
     <p id="error"></p>
 
-    <div class="lists" id="listId"></div>
+    <div class="lists" id="listContainer"></div>
+
+    <div id="toast"></div>
+
 
     <script src="main.js"></script>
 </body>
