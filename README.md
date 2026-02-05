@@ -1,4 +1,5 @@
 To-Do List Application
+![To-Do App Preview](images/Project_ss.png)
 
 A simple and user-friendly To-Do List web application built using HTML, CSS, and JavaScript.
 This app helps users manage daily tasks efficiently with a clean UI and smooth user experience.
