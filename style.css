@@ -55,10 +55,15 @@ h1 {
 .task {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 490px;
     margin-top: 1rem;
     border-bottom: 1px solid #e1e1e1;
     padding: 10px;
+}
+
+.task span {
+    cursor: pointer;
 }
 
 .completed {
@@ -66,9 +71,22 @@ h1 {
     color: gray;
 }
 
+.actions {
+    display: flex;
+    gap: 12px;
+}
+
+.editBtn,
 .deleteBtn {
+    background: none;
     border: none;
     cursor: pointer;
+    font-size: 18px;
+}
+
+.editBtn:hover,
+.deleteBtn:hover {
+    transform: scale(1.15);
 }
 
 #toast {
